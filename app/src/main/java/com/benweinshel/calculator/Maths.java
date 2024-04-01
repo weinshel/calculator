@@ -6,7 +6,6 @@ import java.math.MathContext;
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import hugo.weaving.DebugLog;
 
 /**
  * Created by Ben Weinshel on 5/22/15.
@@ -50,7 +49,6 @@ class Maths {
     }
 
     // Uses the shunting yard algorithm to generate a stack for the expression that is in postfix notation
-    @DebugLog
     private static Stack<String> convertToPostfix(String input, Context c) throws Exception {
 
         Map<String, Integer> operationsMap = new HashMap<>();
@@ -162,7 +160,6 @@ class Maths {
     }
 
     // Evaluates a postfix expression
-    @DebugLog
     private static String evaluatePostfix(Stack<String> postfixIn, Context c) throws Exception {
 
         if (postfixIn.isEmpty()) {

@@ -4,7 +4,6 @@ import java.math.BigDecimal;
 import java.math.MathContext;
 import java.util.List;
 //import org.nevec.rjm.BigDecimalMath;
-import hugo.weaving.DebugLog;
 
 
 /**
@@ -42,7 +41,6 @@ class Operations {
         return result;
     }
 
-    @DebugLog
     static BigDecimal exponentiateValues(List<BigDecimal> operationList) throws NumberFormatException {
         BigDecimal d1 = operationList.get(0);
         BigDecimal d2 = operationList.get(1);
